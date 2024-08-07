@@ -12,8 +12,10 @@ export default defineNuxtConfig({
   },
 
   app: {
-    head: {},
+    head: {
+      title: "RiBuy | Your Online Shop",
+    },
   },
 
-  modules: ["@pinia/nuxt", "@nuxt/icon"],
+  modules: ["@pinia/nuxt", "@nuxt/icon", "nuxt-swiper"],
 });
