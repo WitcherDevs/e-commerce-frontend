@@ -44,14 +44,14 @@ const route = useRoute();
         />
         <Icon name="ri:search-line" size="24" class="mr-2 flex text-black" title="Ara" />
       </div>
-      <NuxtLink>
-        <Icon name="codicon:account" size="30" title="Hesabım" />
+      <NuxtLink to="/account">
+        <Icon name="codicon:account" size="30" title="Hesabım" class="hover:text-[#ff6000]" />
       </NuxtLink>
-      <NuxtLink>
-        <Icon name="ph:heart" size="30" title="Beğendiklerim" />
+      <NuxtLink to="/account/favorites">
+        <Icon name="ph:heart" size="30" title="Favorilerim" class="hover:text-[#ff6000]" />
       </NuxtLink>
-      <NuxtLink>
-        <Icon name="carbon:shopping-cart" size="30" title="Sepetim" />
+      <NuxtLink to="/account/basket">
+        <Icon name="carbon:shopping-cart" size="30" title="Sepetim" class="hover:text-[#ff6000]" />
       </NuxtLink>
     </div>
   </nav>
