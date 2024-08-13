@@ -1,6 +1,9 @@
 <template>
   <main>
-    <div class="flex flex-row items-center justify-start w-screen h-96 gap-24" unselectable="on">
+    <div
+      class="flex flex-row items-center justify-start w-screen h-[28rem] gap-24"
+      unselectable="on"
+    >
       <div class="flex flex-row justify-start items-start h-full ml-48">
         <div class="flex flex-col gap-4 mt-7 w-[16rem]">
           <NuxtLink class="hover:text-[#ff6000]" to="/shop/man">Erkek Giyim</NuxtLink>
@@ -13,9 +16,9 @@
           <NuxtLink class="hover:text-[#ff6000]" to="/shop/sport">Spor & Açık Hava</NuxtLink>
           <NuxtLink class="hover:text-[#ff6000]" to="/shop/sales">Fırsat Ürünleri</NuxtLink>
         </div>
-        <div class="h-full bg-[#ededed] w-1"></div>
+        <div class="h-full bg-[#ededed] w-1" />
       </div>
-      <div class="w-[58rem] mt-7">
+      <div class="w-[63rem] mt-7">
         <Swiper
           :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperPagination]"
           :slides-per-view="1"
@@ -36,18 +39,16 @@
           }"
         >
           <SwiperSlide>
-            <div class="bg-[#ff6000] w-full h-[22rem] flex justify-between rounded-lg">
-              <div class="flex m-8 items-start flex-col gap-5">
+            <div class="bg-[#ff6000] w-full h-[25rem] flex justify-between rounded-lg">
+              <div class="flex m-8 items-start flex-col gap-8">
                 <div class="flex flex-row items-center gap-4 text-lg font-bold">
-                  <img
-                    src="https://cdn.discordapp.com/attachments/1014167819325292554/1270748622237073408/Asus-Logo.png?ex=66b4d460&is=66b382e0&hm=95a7e0b858da42e18b7877cf03f25501e776555c321ec3ee9069ed8f58d277bd&"
-                    alt="logo"
-                    class="w-24"
-                  />
+                  <img src="https://i.hizliresim.com/dpgn3wt.jpg" alt="logo" class="w-24" />
                   <span>Monitörlere</span>
                 </div>
-                <div class="flex flex-col gap-4">
-                  <span class="text-5xl font-extrabold">%30'a varan indirimlerle sahip olun!</span>
+                <div class="flex flex-col gap-10">
+                  <span class="text-5xl font-extrabold max-w-[30rem]"
+                    >%30'a varan indirimlerle sahip olun!</span
+                  >
                   <button
                     class="bg-[#ff6000] border-2 shadow text-white font-bold w-32 h-12 rounded-lg hover:bg-orange-500"
                   >
@@ -55,24 +56,17 @@
                   </button>
                 </div>
               </div>
-              <img
-                src="https://cdn.discordapp.com/attachments/1014167819325292554/1270745818768605289/P_setting_xxx_0_90_end_500.png?ex=66b4d1c4&is=66b38044&hm=6aedc6a2781be6319a84b7022fd99f27ebaa513f6538c1ecff811a264d43fda1&"
-                alt="banner"
-              />
+              <img src="https://i.hizliresim.com/kykb5j6.jpg" alt="banner" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div class="bg-black w-full h-[22rem] flex justify-between rounded-lg">
-              <div class="flex m-8 items-start flex-col gap-5 text-white">
+            <div class="bg-black w-full h-[25rem] flex justify-between rounded-lg">
+              <div class="flex m-8 items-start flex-col gap-8 text-white">
                 <div class="flex flex-row items-center gap-4 text-lg font-bold">
-                  <img
-                    src="https://cdn.discordapp.com/attachments/1014167819325292554/1270750596449701919/image.png?ex=66b4d637&is=66b384b7&hm=bd8e8410b7a48943e5d88b1ed701fcb9610d5270cc7cb94b341751691f3bfc6e&"
-                    alt="logo"
-                    class="w-10"
-                  />
+                  <img src="https://i.hizliresim.com/hkta4qt.jpg" alt="logo" class="w-10" />
                   <span>Iphone 14 Serisine</span>
                 </div>
-                <div class="flex flex-col gap-4">
+                <div class="flex flex-col gap-10">
                   <span class="text-5xl font-extrabold">%10'a varan indirimlerle sahip olun!</span>
                   <button
                     class="bg-black hover:bg-gray-700 border-2 shadow text-white font-bold w-32 h-12 rounded-lg"
@@ -81,15 +75,43 @@
                   </button>
                 </div>
               </div>
-              <img
-                src="https://cdn.discordapp.com/attachments/1014167819325292554/1270731725596659722/image.png?ex=66b4c4a4&is=66b37324&hm=4ff7e6d638235670798993ee6b91b285b7a97a08fa05d20d45923d70ceaef95a&"
-                alt="banner"
-              />
+              <img src="https://i.hizliresim.com/etsbdw5.jpg" alt="banner" />
             </div>
           </SwiperSlide>
         </Swiper>
       </div>
-      <div></div>
+    </div>
+    <div class="flex py-16 px-48">
+      <div class="flex flex-col">
+        <div class="flex items-center gap-2">
+          <div class="bg-[#ff6000] w-4 rounded-lg h-8" />
+          <span class="text-[#ff6000] text-2xl">Günün</span>
+        </div>
+        <div class="text-4xl flex items-end gap-10">
+          <span>Fırsat Ürünleri</span>
+          <div class="flex items-center gap-4">
+            <div class="flex flex-col">
+              <span class="text-base font-mono">Gün</span>
+              <span class="text-4xl font-extrabold">03</span>
+            </div>
+            <div class="font-bold text-3xl text-[#ff6000]">:</div>
+            <div class="flex flex-col">
+              <span class="text-base font-mono">Saat</span>
+              <span class="text-4xl font-extrabold">21</span>
+            </div>
+            <div class="font-bold text-3xl text-[#ff6000]">:</div>
+            <div class="flex flex-col">
+              <span class="text-base font-mono">Dakika</span>
+              <span class="text-4xl font-extrabold">25</span>
+            </div>
+            <div class="font-bold text-3xl text-[#ff6000]">:</div>
+            <div class="flex flex-col">
+              <span class="text-base font-mono">Saniye</span>
+              <span class="text-4xl font-extrabold">06</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 </template>
