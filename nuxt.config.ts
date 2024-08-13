@@ -13,7 +13,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: "RiBuy | Your Online Shop",
+      title: "RiBuy | Dünya'nın Satış Platformu",
     },
   },
 
