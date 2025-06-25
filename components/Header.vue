@@ -22,7 +22,7 @@ const languages = [
 
 <template>
   <header
-    class="w-full h-11 bg-[#ff6000] flex justify-between items-center px-24 text-gray-100 relative shadow"
+    class="w-full h-11 bg-blue-500 flex justify-between items-center px-24 text-gray-100 relative shadow"
   >
     <div />
     <p class="flex text-sm">Yaza özel tüm yaz ürünlerinde %50 indirim ve ücretsiz kargo fırsatı!</p>
@@ -39,13 +39,13 @@ const languages = [
       </div>
       <div
         v-if="!isHiddenLanguageMenu"
-        class="-mb-[4.8rem] shadow absolute fadein bg-[#ff6000]/90 w-24 h-fit rounded-lg border border-orange-700"
+        class="-mb-[4.8rem] shadow absolute fadein bg-blue-500/90 w-24 h-fit rounded-lg border border-blue-700"
       >
         <div
-          class="px-1 py-2 text-sm cursor-pointer hover:bg-orange-400 flex items-center gap-2"
+          class="px-1 py-2 text-sm cursor-pointer hover:bg-blue-400 flex items-center gap-2"
           v-for="(key, i) of languages"
           :class="[
-            key.value === currentLanguage ? 'text-orange-200' : 'text-gray-100',
+            key.value === currentLanguage ? 'text-blue-200' : 'text-gray-100',
             i + 1 !== languages.length ? 'border-b-2 border-white' : '',
           ]"
         >
